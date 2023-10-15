@@ -12,23 +12,28 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
-    height: 350px;
+    max-height: 550px;
     border-color: aquamarine;
 
 }
 h1{
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 40px;
     color: #b9b8b8;
 }
 .keys{
-    display: grid;
-    grid-gap: 10px;
     padding: 20px;
     margin:auto;
-    background-color: #74ddeb;
-    height: 80%;
+    background-color: #266068;
+    height: 100%;
+    border-radius: 20px;
+}
+.keys > input{
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    
 }
 .equal-sign {
     background-color: #0d5d80;
@@ -43,25 +48,28 @@ h1{
     background-color: #db9294;
     border-color: #b0353a;
     color: #fff;
-    width: 80px;
-    height: 30px;  
+    width: 150px;
+    height: 40px;  
 
 }
 
 .clear:hover {
     background-color: #f3050d;
 }
-screen{
+.screen{
 
-    background-color:rgb(155, 215, 230);
-    justify-content: left;
+    background-color:white;
+    display: grid;
+    grid-template-areas: (4, 1fr);
     color: black;
-    font-size: medium;
-    width: 70%;
-    height: 40%;
+    font-size: 25px;
+    width: 60%;
+    height: 30%;
     cursor: default;
-    padding: 25px; 
     padding-left: 38%;
     margin: auto;
-    margin-bottom: 12px;
+}
+table{
+    height: 25vh;
+    width: 400px;
 }
